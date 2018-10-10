@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chanchan/cv/lan_basic/chapter1/main.cpp
+
+/home/chanchan/cv/lan_basic/chapter1/string_test.cpp
+iostream
+-
+string
+-
+

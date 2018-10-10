@@ -87,6 +87,9 @@
 		<Unit filename="/home/chanchan/cv/lan_basic/chapter1/main.cpp">
 			<Option target="chapter1"/>
 		</Unit>
+		<Unit filename="/home/chanchan/cv/lan_basic/chapter1/string_test.cpp">
+			<Option target="chapter1"/>
+		</Unit>
 		<Unit filename="/home/chanchan/cv/lan_basic/chapter1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

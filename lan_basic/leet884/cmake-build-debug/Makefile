@@ -48,10 +48,10 @@ RM = /usr/share/clion/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chanchan/cv/lan_basic/chapter1
+CMAKE_SOURCE_DIR = /home/chanchan/cv/lan_basic/leet884
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chanchan/cv/lan_basic/chapter1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/chanchan/cv/lan_basic/leet884/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chanchan/cv/lan_basic/chapter1/cmake-build-debug/CMakeFiles /home/chanchan/cv/lan_basic/chapter1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chanchan/cv/lan_basic/leet884/cmake-build-debug/CMakeFiles /home/chanchan/cv/lan_basic/leet884/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chanchan/cv/lan_basic/chapter1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chanchan/cv/lan_basic/leet884/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named chapter1
+# Target rules for targets named leet884
 
 # Build rule for target.
-chapter1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 chapter1
-.PHONY : chapter1
+leet884: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 leet884
+.PHONY : leet884
 
 # fast build rule for target.
-chapter1/fast:
-	$(MAKE) -f CMakeFiles/chapter1.dir/build.make CMakeFiles/chapter1.dir/build
-.PHONY : chapter1/fast
+leet884/fast:
+	$(MAKE) -f CMakeFiles/leet884.dir/build.make CMakeFiles/leet884.dir/build
+.PHONY : leet884/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/chapter1.dir/build.make CMakeFiles/chapter1.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/leet884.dir/build.make CMakeFiles/leet884.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/chapter1.dir/build.make CMakeFiles/chapter1.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/leet884.dir/build.make CMakeFiles/leet884.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,35 +147,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/chapter1.dir/build.make CMakeFiles/chapter1.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/leet884.dir/build.make CMakeFiles/leet884.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-string_test.o: string_test.cpp.o
-
-.PHONY : string_test.o
-
-# target to build an object file
-string_test.cpp.o:
-	$(MAKE) -f CMakeFiles/chapter1.dir/build.make CMakeFiles/chapter1.dir/string_test.cpp.o
-.PHONY : string_test.cpp.o
-
-string_test.i: string_test.cpp.i
-
-.PHONY : string_test.i
-
-# target to preprocess a source file
-string_test.cpp.i:
-	$(MAKE) -f CMakeFiles/chapter1.dir/build.make CMakeFiles/chapter1.dir/string_test.cpp.i
-.PHONY : string_test.cpp.i
-
-string_test.s: string_test.cpp.s
-
-.PHONY : string_test.s
-
-# target to generate assembly for a file
-string_test.cpp.s:
-	$(MAKE) -f CMakeFiles/chapter1.dir/build.make CMakeFiles/chapter1.dir/string_test.cpp.s
-.PHONY : string_test.cpp.s
 
 # Help Target
 help:
@@ -185,13 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... chapter1"
+	@echo "... leet884"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... string_test.o"
-	@echo "... string_test.i"
-	@echo "... string_test.s"
 .PHONY : help
 
 

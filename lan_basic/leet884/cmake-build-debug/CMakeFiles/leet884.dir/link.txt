@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/leet884.dir/main.cpp.o  -o leet884 

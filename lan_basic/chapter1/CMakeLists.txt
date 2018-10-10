@@ -3,5 +3,5 @@ project(chapter1)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp string_test.cpp)
 add_executable(chapter1 ${SOURCE_FILES})

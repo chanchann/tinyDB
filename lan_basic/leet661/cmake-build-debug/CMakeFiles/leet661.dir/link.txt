@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/leet661.dir/main.cpp.o  -o leet661 

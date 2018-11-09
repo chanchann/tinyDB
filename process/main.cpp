@@ -1,31 +1,31 @@
 #include <iostream>
-
-#include <QString>
-#include <QDir>
-#include <QFileInfoList>
-
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-#define Debug 0
+#define Debug 1
 
 using namespace std;
 using namespace cv;
-
+void read_images_in_folder(cv::String pattern);
 int main()
 {
-    QString filePath = QString("/home/chanchan/ocr/train");
-    QDir dir_img(filePath);
-    QFileInfoList list_image;
-    dir_img.setFilter(QDir::NoDotAndDotDot | QDir::Files);
-    list_image = dir_img.entryInfoList();
 
+    cv::String pattern="/home/chanchan/cv/test_img/*.jpg";
+    read_images_in_folder(pattern);
+    return 0;
+}
 
-    int cnt = list_image.size();
+void read_images_in_folder(cv::String pattern)
+{
+    vector<cv::String> fn;
+    glob(pattern, fn, false);
+
+    size_t cnt = fn.size(); //number of png files in images folder
     for (int i = 0; i < cnt; i++) {
-        Mat srcImg = imread(list_image.at(i).absoluteFilePath().toStdString(), 0);
+
+        Mat srcImg = imread(fn[i], 0);
         if(Debug) imshow("src", srcImg);
 
         Mat temp1, temp2, temp3, temp4;
@@ -79,7 +79,8 @@ int main()
 
 
         if(Debug) imshow( "dst", dstImage );
-        cout << list_image.at(i).fileName().toStdString() << endl;
+        cout << fn[i] << endl;
+        cout<<typeid(fn[i]).name()<<endl;
         if(Debug) cout << "=========================" << endl;
 
 //        cv::medianBlur(dstImage, temp4, 3);
@@ -94,9 +95,7 @@ int main()
         }
         else if (!Debug) {
             cout<<"correct"<<endl;
-            cv::imwrite(QString("./train/%1").arg(list_image.at(i).fileName()).toStdString(), dstImage);
+            cv::imwrite(cv::String("../train/%1"), dstImage);
         }
      }
-
-    return 0;
 }

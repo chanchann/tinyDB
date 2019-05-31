@@ -1,3 +1,0 @@
-/home/chanchan/cv/opencv/display/CMakeFiles/rebuild_cache.dir
-/home/chanchan/cv/opencv/display/CMakeFiles/Display.dir
-/home/chanchan/cv/opencv/display/CMakeFiles/edit_cache.dir

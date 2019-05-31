@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/leet720.dir/main.cpp.o  -o leet720 

@@ -1,3 +1,0 @@
-/home/chanchan/cv/lan_basic/leet892/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/chanchan/cv/lan_basic/leet892/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/chanchan/cv/lan_basic/leet892/cmake-build-debug/CMakeFiles/leet892.dir

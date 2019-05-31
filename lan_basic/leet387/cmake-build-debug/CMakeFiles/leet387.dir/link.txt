@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/leet387.dir/main.cpp.o  -o leet387 

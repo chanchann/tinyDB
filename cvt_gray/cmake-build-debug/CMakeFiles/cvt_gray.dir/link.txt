@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/cvt_gray.dir/main.cpp.o  -o cvt_gray 
